@@ -1,0 +1,151 @@
+<html>
+  <meta charset="UTF-8" /><meta
+    content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5"
+    name="viewport"
+  /><meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  /><link
+    href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+    rel="stylesheet"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+  <link
+    href="https://hanyauntukmu.likeadream.repl.co/style.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <script src="https://hanyauntukmu.likeadream.repl.co/script.js"></script>
+  <head> 
+    <title>Barakallah Fii Umrik</title>
+  </head>
+  <style>
+    body {
+      background-image: no);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position-y: bottom;
+    }
+    body::before {
+      content: "" !important;
+      color: transparent !important;
+    }
+  </style>
+  <body>
+    <div id="bodyblur">
+      <!-- <img
+        src="https://i.postimg.cc/Y09jcHqc/bg.jpg"
+        width="200%"
+        height="200%"
+      /> -->
+    </div>
+
+    <div id="Content">
+      <div class="image">
+        <img
+          src="https://i.postimg.cc/MGDLc2xr/last.gif"
+          width="130px"
+          height="130px"
+        />
+      </div>
+      <div>
+        <blockquote>
+          <p id="text"></p>
+          <p id="text2"></p>
+        </blockquote>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      function play() {
+        var audio = new Audio(
+          "https://sndup.net/2wtj/d"
+        )
+        audio.play()
+      }
+
+      const swals = Swal.mixin({
+        allowOutsideClick: false,
+        cancelButtonColor: "#FF0040",
+      })
+      const swalsy = Swal.mixin({
+        confirmButtonText: "Iya",
+        allowOutsideClick: false,
+      })
+      const swalst = Swal.mixin({
+        allowOutsideClick: false,
+        showConfirmButton: false,
+        timer: 5000,
+        timerProgressBar: true,
+      })
+
+      async function mulaitanya() {
+        var { isConfirmed: tanyawal } = await swals.fire({
+          title: `Cie ulang tahun ya....`,
+          imageUrl: "https://i.postimg.cc/L5fB1LL6/hbd.gif",
+          imageWidth: 200,
+          imageHeight: 200,
+          confirmButtonText: "Iya",
+          allowOutsideClick: false,
+          showCancelButton: false,
+        })
+        if (tanyawal) {
+          play()
+          kuis()
+        }
+      }
+
+      async function kuis() {
+        await swalst.fire({
+          title: "Barakallah Fii Umrik Ayanggggggg",
+          imageUrl: "https://i.postimg.cc/vZWmnK2p/gigit.gif",
+          imageWidth: 120,
+          imageHeight: 120,
+        })
+		await swalst.fire({
+          title: "Kalo aku ngirim ini, artinya kita LDR ya hehe",
+          imageUrl: "https://i.postimg.cc/SsmkcNY9/bear-cute-1.gif",
+          imageWidth: 120,
+          imageHeight: 120,
+        })
+        await swalst.fire({
+          title: "Tambah usia berarti juga harus tambah dewasa",
+          imageUrl: "https://i.postimg.cc/g06FWScx/tepukbadan.gif",
+          imageWidth: 120,
+          imageHeight: 120,
+        })
+        await swalst.fire({
+          title: "Inget umurnya emang nambah, tapi waktu hidupnya berkurang",
+          imageUrl: "https://i.postimg.cc/02wF21b1/peach-goma.gif",
+          imageWidth: 120,
+          imageHeight: 120,
+        })
+        await swalst.fire({
+          title: "Semoga disisa umurmu bisa jadi orang yang lebih bermanfaat lagi yaa",
+          imageUrl: "https://i.postimg.cc/SNFnKwsh/1.gif",
+          imageWidth: 120,
+          imageHeight: 120,
+        })
+		await swalst.fire({
+          title: "Semoga kamu selalu diberikan kesehatan, kebahagiaan juga kesuksesan",
+          imageUrl: "https://i.postimg.cc/P5vVMvHZ/2.gif",
+          imageWidth: 120,
+          imageHeight: 120,
+        })
+		await swalst.fire({
+          title: "Maaf gabisa balik hehe",
+          imageUrl: "https://i.postimg.cc/TPX0qkCM/balik.gif",
+          imageWidth: 120,
+          imageHeight: 120,
+        })
+        text = "You always be my sweetheart "
+        emotnama = "&#10084;"
+        text2 = "Semoga hari ini kamu dipenuhi kebahagiaan, Jaga diri baik-baik... Jangan sedih, tunggu aku pulanggg "
+        showDiv()
+      }
+      mulaitanya()
+    </script>
+  </body>
+</html>
